@@ -1,0 +1,10 @@
+<!--The standard form but I added glass so you can change/update/create a glass  -->
+
+<%= form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :Post_Content %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+<% end %>

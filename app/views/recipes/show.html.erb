@@ -1,0 +1,10 @@
+<%= link_to "&larr; Back".html_safe, recipes_path %>
+<article>
+  <h2><%= @recipe.name %></h2>
+  <time>Updated <%= @recipe.updated_at %></time>
+  <p><%= @recipe.body %></p>
+  <p>Served in: <%= @recipe.glass %></p>
+  <%= link_to "Edit Drink", edit_recipe_path(@recipe) %>
+  <%= link_to "Delete Drink", recipe_path(@recipe), method: :delete %>
+
+</article>
